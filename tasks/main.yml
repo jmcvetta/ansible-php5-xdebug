@@ -16,6 +16,6 @@
 - name: Ensure PHP configuration files are present
   template:
     src: php.ini
-    dest: "/etc/php5/{{ item }}/conf.d/30-xdebug.ini"
+    dest: "/etc/php5/{{ item }}/conf.d/20-xdebug.ini"
   with_items: "{{ php_installations }}"
 

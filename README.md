@@ -1,7 +1,7 @@
 PHP XDebug
 =========
 
-Ansible role to enable XDebug support in PHP.
+Ansible role to enable XDebug support in PHP 5.
 
 
 Requirements

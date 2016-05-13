@@ -15,8 +15,8 @@ Role Variables
 
 ```yaml
 php_installations:
+  - apache2
   - cli
-  - php5
 
 # Output folder for Xdebug profiler (undefined by default)
 php_profiler_dir: 

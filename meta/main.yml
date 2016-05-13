@@ -1,0 +1,21 @@
+# vim:ft=ansible:
+galaxy_info:
+  author: Jason McVetta <jason.mcvetta@gmail.com>
+  description: Enable XDebug debuggger for PHP 5
+  company: www.siliconheavy.com
+  license: Apache v2
+
+  min_ansible_version: 2.0
+
+  platforms:
+  - name: Ubuntu
+    versions:
+    - trusty
+  
+  galaxy_tags: 
+    - php
+    - php5
+    - debugger
+    - xdebug
+
+dependencies: []

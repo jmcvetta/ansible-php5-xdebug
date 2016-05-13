@@ -1,0 +1,12 @@
+# vim:ft=ansible:
+---
+
+php_installations:
+  - cli
+  - php5
+
+# Output folder for Xdebug profiler (undefined by default)
+php_profiler_dir: 
+
+# Autostart debugger
+php_debug_autostart: no

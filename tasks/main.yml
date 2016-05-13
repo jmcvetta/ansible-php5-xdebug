@@ -1,0 +1,21 @@
+# vim:ft=ansible:
+---
+
+- name: Ensure PHP XDebug debugger is installed
+  apt:
+    name: php5-xdebug
+    state: present
+
+- name: Ensure PHP conf.d folders are present
+  file:
+    path: "/etc/php5/{{ item }}/conf.d/"
+    state: directory
+  with_items: "{{ php_installations }}"
+  
+
+- name: Ensure PHP configuration files are present
+  template:
+    src: php.ini
+    dest: "/etc/php5/{{ item }}/conf.d/30-xdebug.ini"
+  with_items: "{{ php_installations }}"
+

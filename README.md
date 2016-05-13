@@ -37,7 +37,7 @@ Example Playbook
 
     - hosts: web:&dev
       roles:
-         - jmcvetta.php-xdebug
+         - jmcvetta.php5-xdebug
 
 
 License

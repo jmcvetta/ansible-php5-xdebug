@@ -5,6 +5,7 @@
   apt:
     name: php5-xdebug
     state: present
+    update_cache: yes
 
 - name: Ensure PHP conf.d folders are present
   file:
